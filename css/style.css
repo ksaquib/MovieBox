@@ -1,0 +1,84 @@
+body,
+button,
+input,
+textarea{
+    color:black;
+    font-family: 'Asap', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+body{
+    background-color: #ededed;
+    margin: 0;
+    font-family: sans-serif;
+}
+header, footer{
+    background-color: black;
+    height:100px;
+}
+.sidebar-right{
+    background-color: blue;
+    color:white;
+}
+h1{
+    color:red;
+    margin: 0;
+} 
+p{
+    margin:0;
+}
+@media screen and (min-width:1120px){
+.content-area{
+    display: flex;    
+}
+.sidebar-right{
+    flex:0 0 320px;
+}
+}
+/*--------------------------------------------------------------------------------
+   START OF HEADER STYLES
+--------------------------------------------------------------------------------*/
+.site-header {
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+}
+.site-info{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.site-title{
+    margin: 0;
+    font-size: 2em;
+    text-transform:uppercase;
+    font-weight: 300;
+    color:white;
+    text-align: center;
+}
+.site-description{
+    text-align: center;
+    margin-top: -.8;
+    font-size: 1.2em;
+    color:#f6d200;
+    font-style : italic;
+}
+.main-menu{
+    padding:1em 1em;
+    background-color: #f6d200;
+    color: black; 
+}
+@media screen and (min-width:1120px){
+    .site-title{
+        font-size: 4em;
+    }
+    .site-info{
+        display: flex;
+    }
+}
+
+/*--------------------------------------------------------------------------------
+   END OF HEADER STYLES
+--------------------------------------------------------------------------------*/
