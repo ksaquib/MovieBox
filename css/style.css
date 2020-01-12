@@ -13,6 +13,10 @@ body{
     margin: 0;
     font-family: sans-serif;
 }
+img{
+    display: block;
+    width:100%;
+}
 header, footer{
     background-color: black;
     height:100px;
@@ -81,4 +85,192 @@ p{
 
 /*--------------------------------------------------------------------------------
    END OF HEADER STYLES
+--------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+   START THE POST STYLES
+--------------------------------------------------------------------------------*/
+.main-content-area{
+    padding: 2em;
+}
+.post{
+background-color: white;
+margin-bottom: 1em;
+}
+.post a{
+    color:black;
+    text-decoration: none ;
+}
+.post-content{
+    padding:0 40px 20px;
+}
+.post-content h2{
+    background-color: #f6d200;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin:0 -40px 30px;  
+}
+@media screen and (min-width: 810px){
+    .posts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .post{
+        flex-basis: 49%;
+       
+    }
+ }
+ @media screen and (min-width: 1120px){
+     .post-one-third{
+         flex-basis: 32%;
+     }
+     .post-half{
+         flex-basis:49%;
+     }
+     .post-full{
+         flex-basis:100%;
+     }
+ }
+/*--------------------------------------------------------------------------------
+   END THE POST STYLES
+--------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+   START WATCH SECTION STYLES
+--------------------------------------------------------------------------------*/
+.section-header{
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.watch-card{
+    margin-bottom:1em;
+}
+.watch-content{
+    background-color: black;
+    color:white;
+    padding:3em;
+}
+.watch-content h2{
+    font-size:2em;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+}
+.movie-info{
+    font-weight: bold;
+}
+.movie-info span{
+    padding-right: 1.5em;
+}
+.movie-story{
+    margin:1em 0;
+}
+.watch-content a{
+    color: white;
+    font-weight: bold;
+}
+/* for this rule to run we need screen to be 810 or above */
+@media screen and (min-width: 810px){
+    .watch-card{
+        display: flex;
+    }
+    .watch-content{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .img-right{
+        order:2;
+    }
+
+}
+/*--------------------------------------------------------------------------------
+   END WATCH SECTION STYLES
+--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------
+   START DOWNLOAD SECTION STYLES
+--------------------------------------------------------------------------------*/
+.download-card{
+    margin-bottom:1em;
+}
+.download-content{
+    background-color: white;
+}
+.download-content a {
+    background-color: black;
+    color:white;
+    padding:1em 2em;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.download-content a i {
+    font-size: 2.5em;
+}
+.download-info{
+    padding:1em 2em;
+}
+.download-info h4{
+    margin:0;
+}
+.download-info p{
+    margin: 0;
+    font-size: 0.9em;
+}
+.download-cast img{
+    height: 60px;
+    width:60px;
+    border-radius: 50%;
+}
+.download-rating{
+    background-color: #f6d200;
+    padding:1em 2em;
+    color: black;
+    font-size:0.9em;
+}
+.download-rating .rate{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: -.25em;
+}
+
+.download-content{
+    display: flex;
+    flex-flow: column;
+}
+.download-content a, .download-rating {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+.download-genre, .download-cast{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.download-info h4{
+    flex-basis: 20%;
+}
+.download-genre{
+    margin-bottom:10px;
+}
+@media screen and (min-width: 810px){
+    .download-content{
+        display: flex;
+        flex-flow: row;
+    }
+    .download-info{
+        flex-grow: 2;
+    }
+    .download-content a, .download-rating {
+        flex-grow: 1;
+    }
+}
+/*--------------------------------------------------------------------------------
+   END DOWNLOAD SECTION STYLES
 --------------------------------------------------------------------------------*/
