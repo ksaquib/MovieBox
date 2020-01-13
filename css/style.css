@@ -22,7 +22,7 @@ header, footer{
     height:100px;
 }
 .sidebar-right{
-    background-color: blue;
+    background-color: #ededed;
     color:white;
 }
 h1{
@@ -273,4 +273,77 @@ margin-bottom: 1em;
 }
 /*--------------------------------------------------------------------------------
    END DOWNLOAD SECTION STYLES
+--------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------
+   START GALLERY SECTION STYLES
+--------------------------------------------------------------------------------*/
+.gallery-imgs { 
+  margin-left: -8px;
+}
+.gallery-imgs { 
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img {
+	height: 250px;
+	flex-grow: 1;
+	margin: 0 0 8px 8px;
+}
+.gallery-img:nth-child(4n+1) {
+    flex-basis: 250px;
+}
+.gallery-img:nth-child(4n+2) {
+    flex-basis: 325px;
+}
+.gallery-img:nth-child(4n+3) {
+    flex-basis: 180px;
+}
+.gallery-img:nth-child(4n+4) {
+    flex-basis: 380px;
+}
+.gallery-img img {
+	height: 100%;
+	object-fit: cover;
+}
+/*--------------------------------------------------------------------------------
+   START GALLERY SECTION STYLES
+--------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+   START SIDE BAR SECTION STYLES
+--------------------------------------------------------------------------------*/
+.sidebar-right{
+    padding: 2em;
+    color: black;
+}
+.widget{
+    background-color: white;
+    margin-bottom: 2em;
+}
+.widget-content{
+    padding: .5em 2em;
+}
+.sidebar-right ul{
+    list-style-type: none;
+    padding-left: 1em;
+}
+.sidebar-right ul a {
+    display: block;
+    padding-bottom: .4em;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media screen and (min-width:810px) and (max-width:1120px){
+    .sidebar-right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .widget{
+        flex-basis: 48.8%;
+    }
+}
+/*--------------------------------------------------------------------------------
+   END SIDE BAR SECTION STYLES
 --------------------------------------------------------------------------------*/
